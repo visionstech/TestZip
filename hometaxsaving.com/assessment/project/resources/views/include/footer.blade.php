@@ -1,1 +1,0 @@
-<div class="footersec">&copy; <?php echo date("Y"); ?> Copyright.</div>

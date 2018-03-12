@@ -1,1 +1,0 @@
-{{ htmlspecialchars_decode($email_content) }}
