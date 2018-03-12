@@ -1,0 +1,23 @@
+{
+    "name": "lakshmaji/plivo",
+    "license": "MIT",
+    "require": {
+        "plivo/plivo-php": "^1.1"
+    },
+    "description": "Send SMS using Plivo Cloud API",
+    "authors": [
+        {
+            "name": "Ananth Mutyala",
+            "email": "lakshmaji9@gmail.com"
+        }
+    ],
+    "keywords" :[
+        "Laravel", "Plivo", "PHP", "SMS", "API"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lakshmaji\\Plivo\\": "src/"
+        }
+	},
+    "minimum-stability": "dev"
+}

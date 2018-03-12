@@ -1,0 +1,2258 @@
+ @font-face {
+    font-family: 'robotoregular';
+    src: url('../css/fonts/roboto-regular-webfont.eot');
+    src: url('../css/fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../css/fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../css/fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../css/fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../css/fonts/roboto-medium-webfont.eot');
+    src: url('../css/fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../css/fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../css/fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../css/fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../css/fonts/roboto-medium-webfont.eot');
+    src: url('../css/fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../css/fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../css/fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../css/fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+    margin:0;
+    font-family: robotoregular;
+}
+body *
+{
+    box-sizing: border-box;
+     -webkit-text-size-adjust: 100%;
+}
+
+ul.fireplace {
+    width: 50%;
+    float: left;
+    margin:0;
+    margin-bottom: 30px;
+}
+ul.fireplace li {
+    width: 60%;
+}
+ul.carport li {
+    /* float: left; */
+    padding-bottom: 10px;
+    /* text-align: left; */
+}
+
+input#fireplace_count {
+    padding: 4px;
+    outline: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    text-align: left;
+    width: 10%;
+
+}
+ul.garbage {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+}
+ul.garbage li {
+    width: 70%;
+}
+input#garage_count {
+    padding: 4px;
+    outline: 0;
+    border-radius: 0;
+    width: 10%;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+
+}
+ul.carport {
+    width: 50%;
+    float: left;
+}
+
+ul.carport li
+{
+    width: 40%;
+}
+ul.patio
+{
+        width: 50%;
+    float: left;
+    margin: 0;
+}
+input#unfinished_space {
+    background: #fff;
+}
+input#finished_space
+{
+    background: #fff;
+}
+select#bedrooms
+{
+    background-color: #fff;
+}
+select#bathrooms
+{
+background-color: #fff;
+}
+input#square_footage
+{
+    background-color: #fff;
+}
+.inner-item-form.special {
+    padding-bottom: 10px;
+}
+select
+{
+    font-size: 11px!important;
+}
+.swal-modal
+{
+    border-radius: 0;
+    background-color: #f3f3f3;
+}
+.swal-button {
+    background-color: #3e6edf;
+    color: #fff;
+     border-radius: 0; 
+    box-shadow: none;
+    /* border-radius: 5px; */
+    /* font-weight: 600; */
+    font-size: 14px;
+    padding: 10px 24px;
+    /* margin: 0; */
+    cursor: pointer;
+    outline: 0;
+}
+.swal-button--cancel
+{
+    background-color: #3e6edf;
+    color: #fff;
+    /* border: none; */
+    box-shadow: none;
+    /* border-radius: 5px; */
+    /* font-weight: 600; */
+    font-size: 14px;
+    padding: 10px 24px;
+    /* margin: 0; */
+    cursor: pointer;
+    outline: 0;
+}
+.swal-button:hover
+{
+    background-color: #044a9d;
+}
+.swal-button--cancel:hover
+{  
+    background-color: #044a9d;
+}
+
+/* next */
+.main-body
+{
+	width: 100%;
+     overflow:hidden;
+}
+.inner-main-body
+{
+	padding: 4% 3%;
+	overflow:hidden;
+    display: flex;
+}
+.dummy-name
+{
+	background-color: #0f0f15;
+    width: 20%;
+    padding: 40px 0 0 0;
+   
+    float: left;
+}
+
+.dummy-name img
+{
+width: 20px;
+    height: 20px;
+}
+.dummy-name span {
+position: relative;
+}
+.dummy-name h4
+{
+	text-align: center;
+	color: #fff;
+    font-size: 20px;
+    font-family: robotomedium;
+    margin: 0;
+}
+.dummy-name li
+{
+	padding-left: 10px;
+}
+.dummy-name li img {
+    vertical-align: middle;
+}
+.dummy-name li a
+{
+	color: #cacaca;
+    font-size: 18px;
+    font-family: robotoregular;
+    padding: 17px 17px 16px 40px;
+    display: block;
+    position: relative;
+
+}
+.dummy-name li a:hover
+{
+   color: #3663da;
+
+}
+.dummy-name a:before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    left: 8px;
+    top: 19px;
+    background-image: url(../css/images/dashboard.svg);
+    background-repeat: no-repeat;
+}
+.dummy-name .start-search:before {
+    
+    background-image: url(../css/images/search.svg);
+}
+.dummy-name .profile:before {
+    
+    background-image: url(../css/images/my-profile.svg);
+}
+.dummy-name .password:before {
+    
+    background-image: url(../css/images/password.svg);
+}
+.dummy-name .logout:before {
+   
+    background-image: url(../css/images/logout.svg);
+}
+.dummy-name li:first-child a {
+    display: block;
+    position: relative;
+}
+.dummy-name ul
+{
+    padding: 0
+}
+.outer-search-list
+{
+padding: 0 2%;
+    overflow: hidden;
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+}
+.search:before
+{
+content: "\f002";	
+font: normal normal normal 14px/1 FontAwesome;
+}
+.search-list
+{
+	width: 100%;
+float: left;
+border: 2px solid #f3f3f3;
+}
+.top-search-list li:last-child {
+    float: right;
+}
+.top-search-list li {
+    float: left;
+}
+.top-search-list ul li img {
+    vertical-align: middle;
+}
+.top-search-list ul li a
+{
+position: relative;
+
+}
+.top-search-list ul li a:hover {
+    color: #ccc;
+}
+.top-search-list ul li a:before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 21px;
+    left: 0;
+    top: 2px;
+
+    background-image: url(../css/images/my-profile-search.svg);
+}
+.top-search-list ul{
+    width: 100%;
+    overflow: hidden;
+}
+.top-search-list li:last-child a:before {
+    display: none;
+}
+
+
+
+.top-search-list ul li a {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    font-family: robotoregular;
+    padding: 0 8px;
+}
+.top-search-list
+{
+    padding-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+select::-ms-expand {
+    display: none;
+}
+.top-search-list ul {
+    padding: 0;
+}
+.top-search-list li:last-child a {
+    color: #fff;
+     background-color: #3663da;
+    padding: 10px;
+        display: inline-block;
+}
+
+input[type="search"] {
+  padding: 7px 15px;
+    border: 1px solid #ccc;
+    outline: 0;
+    max-width: 193px;
+    }
+.table-search-list
+{
+	width: 100%;
+}
+.inner-table
+{
+	padding: 40px;
+}
+
+
+ul.inner-list {
+    padding: 8px 25px;
+}
+ul.second-inner-list {
+    padding: 8px 25px;
+}
+
+
+
+/*form*/
+.my-profile-form {
+    padding: 40px 30px;
+    max-width: 800px;
+}
+.my-profile-form span {
+    color: #ff0000;
+}
+.my-profile-form label {
+    font-size: 18px;
+    font-family: robotomedium;
+    color: #575757;
+}
+.my-profile-form input[type="text"] {
+    outline: 0;
+}
+.my-profile-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px 0;
+    border: 1px solid #bcbcbc;
+    background-color: #f6f6f6;
+    font-size: 14px;
+}
+.my-profile-form select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border-radius: 0;
+    padding: 12px;
+    margin: 10px 0 15px 0;
+    outline: 0;
+    border: 1px solid #bcbcbc;
+    position: relative;
+    color: #bcbcbc;
+    font-size: 14px;
+}
+.name-form {
+    margin: 0 -15px;
+}
+.email{
+    margin: 0 -15px;
+}
+.street {
+    margin: 0 -15px;
+}
+.city {
+    margin: 0 -15px;
+}
+.zip{
+    margin: 0 -15px;
+}
+.email-form input[type="text"] {
+    background-color: #dadada;
+}
+.first-name-form {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.last-name-form {
+    width: 50%;
+    overflow: hidden;
+     padding: 0 15px;
+    }
+    .email-form {
+    width: 50%;
+    float: left;
+     padding: 0 15px;
+}
+.Phone-form {
+    width: 50%;
+    overflow: hidden;
+     padding: 0 15px;
+}
+.street-form {
+    width: 50%;
+    float: left;
+     padding: 0 15px;
+}
+.street-empty-form {
+    width: 50%;
+    overflow: hidden;
+     padding: 0 15px;
+}
+.city-form {
+    width: 50%;
+    float: left;
+     padding: 0 15px;
+}
+.state-form {
+    width: 50%;
+    overflow: hidden;
+     padding: 0 15px;
+}
+.zip-form {
+    width: 50%;
+    float: left;
+     padding: 0 15px;
+}
+.county-form {
+    width: 50%;
+    overflow: hidden;
+     padding: 0 15px;
+}
+.submit-button {
+    text-align: right;
+    padding-top: 60px;
+}
+.submit-button a {
+    display: inline-block;
+    background-color: #3663da;
+    padding: 10px 24px;
+    color: #fff;
+}
+.search-address-form {
+    width: 100%;
+}
+.dropdown 
+{
+    position: relative;
+    
+}
+/*new*/
+.inner-top-search-list li {
+    display: inline-block;
+    width: 17%;
+    position: relative;
+}
+.inner-top-search-list li a {
+   border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: robotomedium;
+    background-color: #7a7a7a;
+    color: #fff;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.inner-top-search-list li:last-child:after
+{
+    display: none;
+}
+.inner-top-search-list li.active a{
+    background-color: #5c87f8;   
+}
+.inner-top-search-list li::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 100%;
+      background-color: #aeaeae;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    z-index: -1;
+}
+.inner-top-search-list li:first-child::after
+{
+    background-color:#5c87f8; 
+}
+.inner-top-search-list li:nth-child(2)::after
+{
+    background-color:#5c87f8; 
+}
+.inner-wrapper-top-search-list li::after {
+   display: none;
+}
+.inner-top-search-list li:last-child a:after
+{
+    display: none;
+}
+
+
+.inner-top-search-list {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.inner-top-search-list ul
+{padding:0;}
+.inner-wrapper-top-search-list li {
+   display: inline-block;
+    width: 17%;
+    font-size: 15px;
+    font-family: robotoregular;
+    vertical-align: top;
+  
+}
+.inner-wrapper-top-search-list ul
+{
+    margin-top: 0;
+}
+.inner-wrapper-top-search-list {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.search-heading {
+    width: 100%;
+    padding: 0 30px;
+    float: left;
+}
+.outer-form {
+    width: 70%;
+   padding:0 30px;
+   float: left;
+}
+.assessment-image
+{
+    width: 30%;
+    float: left;
+}
+.assessment-image img
+{
+    max-width: 100%;
+}
+.search-heading h4 {
+   font-size: 19px;
+    font-family: robotoregular;
+    /* color: #3663da; */
+    color: #3e6edf!important;   
+}
+.search-heading p
+{
+    font-size: 14px;
+    font-family: robotomedium;
+    color: #959595;
+}
+.search-heading ol {
+    padding: 0 20px;
+}
+.back-button
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0 40px;
+}
+.back-button li {
+    display: inline-block;
+}
+.back-button li:last-child {
+    float: right;
+    padding-right: 30px;
+}
+.back-button li a {
+    background-color: #3e6edf;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 15px;
+    font-family: robotoregular;
+}
+
+.assessment-form {
+    width: 100%;
+    padding: 20px 30px 0;
+    overflow: hidden;
+   
+}
+.inner-wrapper-assessment-form {
+    width: 82%;
+    overflow: hidden;
+    float: left;
+    padding-right: 50px;
+}
+.inner-assessment-form {
+   width: 100%;
+    float: left;
+    padding-bottom: 15px;
+}
+.inner-assessment-form label {
+    width: 23%;
+    float: left;
+    font-size: 15px;
+    font-family: robotomedium;
+    padding-right: 10px;
+}
+.inner-assessment-form span
+{
+    color: #ff0000;
+}
+.inner-assessment-form input[type="text"] {
+    width: 77%;
+   
+    padding: 8px;
+    font-size: 13px;
+    color: #888888;
+    background-color: #f6f6f6;
+    -webkit-appearance: none;
+     -ms-appearance: none;
+      -moz-appearance: none;
+    border: 1px solid #bcbcbc;
+    outline: 0;
+}
+.inner-assessment-form select {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+      -moz-appearance: none;
+    border: 1px solid #bcbcbc;
+    border-radius: 0;
+    width: 77%;
+    padding: 8px;
+    outline: 0;
+    background-color: #f6f6f6;
+ 
+}
+.inner-assessment-form .dropdown
+{
+    position: relative;
+}
+
+.inner-assessment-form.inner-inner {
+    width: 50%;
+}
+.inner-assessment-form.inner-inner label {
+    width: 46%;
+}
+.inner-assessment-form.inner-inner input[type="text"]
+{
+    width: 54%;
+}
+.inner-assessment-form.inner-inner.inner-inner-inner label {
+    width: 46%;
+   text-align: right;
+}
+select.inner-inner-inner {
+    width: 54%;
+}
+.dropdown
+{
+    position: relative;
+}
+.dropdown:after
+{
+    position: absolute;
+}
+.inner-wrapper-assessment {
+    width: 18%;
+    float: left;
+}
+.inner-wrapper-assessment img {
+    max-width: 100%;
+}
+.inner-need-help {
+    width: 85%;
+    float: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.inner-need-help h4 {
+    margin: 0;
+    color: #243d92;
+    font-size: 28px;
+    font-family: robotoregular;
+}
+.inner-need-help p {
+    font-size: 14px;
+    font-family: robotoregular;
+}
+.inner-need-help li {
+    padding-bottom: 25px;
+    font-size: 14px;
+    font-family: robotoregular;
+    position: relative;
+}
+.inner-need-help li:before
+{
+   content: "";
+    background-image: url(../images/blue-circle.png);
+    position: absolute;
+    width: 28px;
+    background-repeat: no-repeat;
+    height: 28px;
+    left: -40px;
+    top: 12px;
+    vertical-align: middle;
+}
+.need-help-image {
+    width: 15%;
+    float: left;
+}
+.need-help-image img {
+    width: 100px;
+    padding-right: 8px;
+}
+.continue-button
+{
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    padding: 40px 22px 40px;
+}
+.continue-button a
+{
+display: inline-block;
+    background-color: #3e6edf;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 13px;
+}
+/*new*/
+.main-verify-form {
+    width: 100%;
+    overflow: hidden;
+}
+.inner-verify-form {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+.inner-verify-form span {
+    color: #ff0000;
+}
+.verify-form {
+    width: 100%;
+    overflow: hidden;
+
+}
+.verify-form.inner-inner
+{
+        margin: 0 -15px;
+        padding-bottom: 20px;
+}
+
+.inner-verify-form label
+{
+    width: 100%;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-family: robotomedium;
+    color: #575757;
+}
+.inner-verify-form input[type="text"]
+{
+    width: 100%;
+    padding: 12px;
+    outline: 0;
+    font-size: 12px;
+         background-color: #f6f6f6;
+    border: 1px solid #bcbcbc;
+    border-radius: 0;
+}
+.full-verify-form {
+    width: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+        padding-bottom: 15px;
+}
+.full-verify-form span {
+    color: #ff0000;
+}
+.full-verify-form label {
+    width: 42%;
+    float: left;
+    padding-right: 10px;
+    font-size: 13px;
+    font-family: robotomedium;
+    color: #575757;
+    padding-top: 6px;
+}
+.full-verify-form input[type="text"] {
+    width: 58%;
+    padding:12px;
+     outline: 0;
+     font-size: 12px;
+     background-color: #fff;
+    border: 1px solid #bcbcbc;
+    border-radius: 0;
+}
+.full-verify-form-input .error {
+    width: 100%;
+    padding-left: 42%;
+}
+.heading-major h4 {
+    font-size: 19px;
+    color: #3e6edf;
+    font-family: robotoregular;
+        margin-bottom: 6px;
+}
+.major-items-form {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
+.major-items-form label {
+       width: 41%;
+    float: left;
+    font-size: 12px;
+    font-family: robotomedium;
+    color: #575757;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+.major-items-form  input[type="text"] {
+   width: 59%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #bcbcbc;
+    background-color: #f6f6f;
+
+}
+.major-table {
+    width: 100%;
+    border-top: 1px solid #bcbcbc;
+}
+.major-table ul {
+    padding: 0;
+}
+.major-table li {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    font-family: robotomedium;
+    font-weight: bold;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.major-table p {
+    margin: 0;
+    font-size: 12px;
+    color: #979797;
+}
+
+/****************/
+
+.checkbox-div {
+    /*display: block;*/
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+   font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-div input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+     color: #000;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-div:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-div input:checked ~ .checkmark {
+    background-color: #eee;
+    color: #000;
+   
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+/* Show the checkmark when checked */
+.checkbox-div input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-div .checkmark:after {
+   left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*************/
+
+
+.item-form {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 30px;
+}
+.main-inner-form
+{
+    width: 100%;
+    overflow: hidden;
+}
+.inner-item-form {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.inner-item-form label {
+    width: 27%;
+    float: left;
+    padding-right: 10px;
+    font-size: 13px;
+    color: #959595;
+    font-family: robotoregular;
+}
+.inner-item-form span {
+    width: 73%;
+    float: right;
+    font-size: 12px;
+    color: #959595;
+}
+
+.inner-item-form input[type="text"] {
+    width: 30%;
+    padding: 3px;
+    outline: 0;
+    border: 1px solid #bcbcbc;
+    background-color: #fff;
+    color: #888888;
+    border-radius: 0;
+}
+.major-items-form input[type="text"] {
+    background-color: #f6f6f6;
+    border-radius: 0;
+    font-size: 12px;
+}
+.major-items-form select {
+     -webkit-appearance: none;
+    -moz-appearance: none;
+   -ms-appearance: none;
+    border: 1px solid #bcbcbc;
+    border-radius: 0;
+    width: 59%;
+    padding: 10px;
+    outline: 0;
+    background-color: #f6f6f6;
+}
+
+.inner-item-form p{
+    color: #3e6eda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    font-family: robotoregular;
+}
+
+.verify-form.inner-inner span {
+    color: #ff0000;
+}
+.verify-image {
+    width: 30%;
+    overflow: hidden;
+}
+.verify-image img
+{
+    max-width: 100%;
+}
+.confirm-button {
+    width: 100%;
+    clear: both;
+    text-align: right;
+    padding: 30px 30px 40px 0;
+}
+.confirm-button a {
+    background-color: #3e6edf;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: robotoregular;
+}
+.dummy-name li:nth-child(2) {
+    background-color: #3663da;
+    padding-top: 0;
+}
+.dummy-name li:nth-child(2) a:hover {
+    color:#fff;
+    
+}
+
+
+
+.inner-table table.dataTable thead th
+{
+    border-bottom: 1px solid #f3f3f3;
+
+}
+.inner-table table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd
+{
+ background-color: #ffffff;
+}
+.inner-table table.dataTable.stripe tbody tr.even, table.dataTable.display tbody tr.even
+{
+ background-color: #f9f9f9;
+}
+ div#example_info {
+    font-family: robotoregular;
+    font-size: 17px;
+}
+
+a#example_previous:before {
+    font: normal normal normal 13px/1 FontAwesome;
+    content: "\f104";
+    padding: 10px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+a#example_next:after {
+    font: normal normal normal 13px/1 FontAwesome;
+    content: "\f105";
+    padding: 10px;
+    display: inline-block;
+    background-color: #3663da;
+    color: #fff;
+    cursor: pointer;
+}
+a.paginate_button.current {
+    font-size: 12px;
+}
+a.paginate_button {
+    font-size: 12px;
+}
+
+
+body a#example_previous {
+    font-size: 0;
+}
+body a#example_next {
+    font-size: 0;
+}
+a#example_next {
+    padding: 0;
+  
+}
+div#example_paginate a {
+    background: #fff;
+}
+div#example_paginate span a {
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+body table.dataTable.no-footer {
+     border-bottom: 0;
+     padding-top: 0;
+}
+body table.dataTable.display tbody tr.odd {
+    background-color: #fff;
+}
+body table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+    background-color: #ffff;
+}
+form#verify_address_form {
+    overflow: hidden;
+}
+select#state {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   -ms-appearance: none;
+    border-radius: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+select#county
+{
+    -webkit-appearance: none;
+      -moz-appearance: none;
+   -ms-appearance: none;
+    border-radius: 0;
+    padding: 10px;
+    width: 58%;
+    background-color: #f6f6f6;
+}
+input.form-control.inline-input {
+    width: 15%;
+    text-align: center;
+}
+input.additional_homeowner_question.form-control.inline-input {
+    width: 85%;
+    text-align: left;
+}
+.confirm-button input[type="submit"]
+{
+    display: inline-block;
+    background-color: #3e6edf;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid;
+    outline: 0;
+    cursor: pointer;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.dropdown:before {
+    position: absolute;
+    content: "\f107";
+    bottom:7px;
+    right: 11px;
+    font: normal normal normal 19px/1 FontAwesome;
+    cursor: pointer;
+}
+/*responsive*/
+@media only screen and (max-width: 1199px)
+{
+    .header-logo
+    {
+        width: 30%;
+    }
+    .nav-bar
+    {
+        width: 50%;
+    }
+    .header-button
+    {
+        width: 20%;
+    }
+       .dummy-name li a
+       {
+        padding-left: 28px;
+        font-size: 15px;
+       }
+      
+.dummy-name a:before
+{
+content: "";
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    left: 0;
+    top: 16px;
+    background-image: url(../css/images/dashboard.svg);
+    background-repeat: no-repeat
+}
+    #Footer .widgets_wrapper
+    {
+        padding: 50px 15px;
+    }
+    /* new*/
+    .inner-assessment-form label
+    {
+        width: 40%;
+        font-size: 12px;
+    }
+    .inner-need-help p
+    {
+        font-size: 12px;
+    }
+    .inner-need-help li
+    {
+        font-size: 12px;
+    }
+    .inner-wrapper-top-search-list li
+    {
+        font-size: 13px;
+    }
+    .inner-assessment-form input[type="text"]
+    {
+        font-size: 11px;
+    }
+    .inner-item-form label
+    {
+        width: 32%;
+    }
+    .inner-item-form span
+    {
+        width: 68%;
+        font-size: 11px;
+    }
+    .major-items-form label
+    {
+        font-size: 11px;
+    }
+    .checkbox-div
+    {
+        font-size: 10px;
+    }
+
+    
+   
+}
+@media only screen and (max-width: 1024px)
+{
+    ul.garbage {
+    width: 100%;
+}
+ul.fireplace li {
+    width: 33%;
+    vertical-align: middle;
+}
+ul.carport {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+}
+ul.patio
+{
+    width: 100%;
+}
+ul.garbage li
+{
+    width: 33%;
+    vertical-align: middle;
+}
+ul.carport li
+{
+    width: 100%;
+}
+ul.fireplace {
+    width: 100%;
+}
+.inner-wrapper-top-search-list li
+    {
+        font-size: 12px;
+    }
+     .inner-need-help p
+    {
+        font-size: 11px;
+    }
+    .inner-need-help li
+    {
+        font-size: 11px;
+    }
+    .outer-form
+    {
+        width: 75%;
+    }
+    .verify-image {
+    width: 25%;
+    overflow: hidden;
+}
+.major-table li{
+    font-size: 11px;
+    width: 100%;
+}
+.inner-item-form label
+{
+    font-size: 12px;
+}
+.inner-item-form span
+{
+    font-size:9px;
+}
+.checkbox-div
+{
+    font-size: 10px;
+}
+input.additional_homeowner_question.form-control.inline-input
+{
+    width: 85%;
+}
+}
+@media only screen and (max-width: 991px)
+{
+  
+    .major-table li
+{
+    font-size: 9px;
+    width: 100%;
+}
+.major-table li:before
+{
+    width: 10px;
+    height: 10px;
+}
+    .container
+    {
+        width: 100%;
+    }
+    .header-logo {
+    width: 21%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.header-logo img {
+    height: 52px;
+    max-width: 100%;
+    padding:0;
+    }
+    .nav-bar {
+    width: 56%;
+}
+.nav-bar ul {
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding: 0;
+}
+.nav-bar li a
+{
+    font-size: 13px;
+}
+.header-button {
+    width: 23%;
+    float: left;
+}
+    .dummy-name li a
+     {
+ 
+    padding-left: 30px;
+     font-size: 15px;  
+}
+.dummy-name li {
+    padding-left: 30px;
+}
+
+
+.inner-main-body
+{
+    display: block;
+}
+.dummy-name
+{
+    width: 100%;
+}
+.outer-search-list
+{
+    width: 100%;
+}
+.one-fourth.column, .four.columns {
+    width: 50%;
+    float: left;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.column, .columns {
+    float: left;
+    margin: 0;
+}
+.textwidget p
+{
+    font-size: 17px;
+}
+#Footer a
+{
+    font-size: 19px;
+}
+.widget h4
+{
+    font-size: 22px;
+}
+.textwidget h6
+{
+    font-size: 22px;
+}
+.textwidget i
+{
+    font-size: 30px;
+}
+.menu-icon
+    {
+        display: none;
+    }
+    .inner-assessment-form label
+    {
+        font-size: 12px;
+    }
+    .inner-need-help p
+    {
+        font-size: 11px;
+    }
+    .inner-need-help li
+    {
+        font-size: 11px;
+    }
+    .inner-top-search-list li a:after
+    {
+        width: 100px;
+    }
+    .checkbox-div
+    {
+        font-size: 9px;
+    }
+    .full-verify-form label
+    {
+        font-size: 13px;
+    }
+    .confirm-button
+    {
+        padding-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 767px)
+{
+ul.fireplace li {
+    width: 31%;
+    vertical-align: middle;
+}
+ul.garbage li
+{
+    width: 31%;
+    vertical-align: middle;
+}
+     
+       .container
+    {
+        width: 100%;
+    }
+     .nav-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+.nav-bar li a {
+    font-size: 17px;
+    padding: 22px 12px;
+    display: block;
+}
+.menu-icon
+{
+    width: 18%;
+    float: left;
+    padding: 22px 60px;
+    display: block;
+    position: relative;
+}
+.menu-icon button
+{
+    position: relative;
+    font-size: 20px;
+    display: none;
+}
+.menu-icon i:before
+{
+   
+    content: "\f0c9";
+    font: normal normal normal 18px/1 FontAwesome;
+    position: absolute;
+    top: 38%;
+    bottom: 0;
+    left: 35px;
+    cursor: pointer;
+}
+.nav-bar ul li
+{
+    width: 100%;
+    background-color: #f3f3f3;
+    
+    border-bottom: 1px solid #ccc;
+}
+.nav-bar li:after
+{
+    display: none;
+}
+    
+   .header-logo {
+   width: 53%;
+    padding-left: 60px;
+}
+    .header-logo img
+    {
+        height: 50px;
+    }
+   
+    .header-button
+    {
+        padding-top: 20px;
+    }
+      .header-button a
+      {
+        font-size: 12px;
+      }
+    .one-fourth.column, .four.columns {
+    width: 100%;
+    float: left;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+div#example_paginate {
+    text-align: right;
+}
+/*form*/
+.first-name-form {
+    width: 50%;
+    float: left;
+}
+.last-name-form {
+    width: 50%;
+    overflow: hidden;
+    }
+    .email-form {
+    width: 50%;
+    float: left;
+}
+.Phone-form {
+    width: 50%;
+    overflow: hidden;
+}
+.street-form {
+    width: 50%;
+    float: left;
+}
+.street-empty-form {
+    width: 50%;
+    overflow: hidden;
+}
+.city-form {
+    width: 50%;
+    float: left;
+}
+.state-form {
+    width: 50%;
+    overflow: hidden;
+}
+.zip-form {
+    width: 50%;
+    float: left;
+}
+.county-form {
+    width: 50%;
+    overflow: hidden;
+}
+.search-address-form {
+    width: 100%;
+}
+.search-address-form input.search-input {
+    width: 100%;
+}
+
+/* new */
+.inner-top-search-list ul
+{
+    padding: 0;
+}
+.inner-top-search-list li a:after
+{
+    width: 95px;
+}
+.inner-wrapper-top-search-list li
+{
+    font-size: 10px;
+}
+.inner-wrapper-assessment-form
+{
+    width: 100%;
+}
+.assessment-form
+{
+    width: 100%;
+    padding:0 30px;
+}
+.inner-assessment-form label
+{
+    font-size: 15px;
+}
+.inner-wrapper-assessment
+{
+    width: 100%;
+    padding-top: 20px;
+}
+.inner-assessment-form input[type="text"]
+{
+    font-size: 13px;
+
+}
+.inner-need-help
+{
+padding-left: 0;
+}
+.search-heading h4
+{
+    font-size: 17px;
+}
+.inner-need-help p
+{
+    font-size: 13px;
+}
+.inner-need-help li
+{
+    font-size: 13px;
+}
+
+.inner-need-help li:before
+{
+    top: 5px;
+}
+.major-items-form
+{
+    width: 100%;
+}
+.major-items-form label
+{
+    width: 50%;   
+    padding-bottom: 10px; 
+    
+}
+.major-items-form input[type="text"]
+{
+    width: 100%;
+}
+.major-items-form select
+{
+    width: 100%;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    clear: both;
+}
+.major-table li
+{
+    font-size: 12px;
+}
+.major-table li
+{
+    width: 100;
+}
+.inner-item-form input[type="text"]
+{
+    width: 100%;
+}
+.inner-item-form b
+{
+    padding:0;
+    font-size: 13px;
+}
+.inner-item-form label
+{
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+.heading-major h4
+{
+    font-size: 18px
+}
+.outer-form
+{
+    width: 100%;
+}
+select#county
+{
+    width: 100%;
+}
+.verify-image
+{
+    display: none;
+}
+input.form-control.inline-input
+{
+    width: 5%;
+}
+.inner-item-form label
+{
+    width: 100%;
+}
+.inner-item-form span
+{
+    width: 100%;
+}
+.inner-item-form span
+{
+    font-size: 14px;
+}
+input.additional_homeowner_question.form-control.inline-input
+{
+    width: 94%;
+}
+.confirm-button
+{
+    text-align: center;
+}
+.top-search-list li:last-child
+{
+    float: none;
+}
+.top-search-list li:last-child a
+{
+        color: #fff;
+    background-color: #3663da;
+    padding: 10px;
+    display: inline-block;
+        float: none;
+}
+}
+@media only screen and (max-width: 640px)
+{
+	ul.fireplace li 
+	{
+        width: 41%;
+        vertical-align: middle;
+     }
+    ul.garbage li
+    {
+        width: 41%;
+        vertical-align: middle;
+    } 
+
+    .first-name-form {
+    width: 100%;
+    float: left;
+}
+.last-name-form {
+    width: 100%;
+    overflow: hidden;
+    }
+    .email-form {
+    width: 100%;
+    float: left;
+}
+.Phone-form {
+    width: 100%;
+    overflow: hidden;
+}
+.street-form {
+    width: 100%;
+    float: left;
+}
+.street-empty-form {
+    width: 100%;
+    overflow: hidden;
+}
+.city-form {
+    width: 100%;
+    float: left;
+}
+.state-form {
+    width: 100%;
+    overflow: hidden;
+}
+.zip-form {
+    width: 100%;
+    float: left;
+}
+.county-form {
+    width: 100%;
+    overflow: hidden;
+}
+.search-address-form {
+    width: 100%;
+}
+.search-address-form input.search-input
+{
+    width: 100%;
+}
+.menu-icon
+    {
+        width: 5%;
+    }
+     .header-button
+     {
+        width: 21%;
+     }
+    .header-button a
+    {
+        font-size: 10px;
+    }
+/*new*/
+.inner-wrapper-top-search-list li
+{
+    font-size: 10px;
+}
+.inner-top-search-list li a:after
+{
+    width: 70px;
+}
+
+.inner-item-form span
+{
+    font-size: 9px;
+}
+
+.verify-image
+{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 480px)
+{
+    ul.garbage li {
+    width: 63%!important;
+}
+ul.fireplace li {
+    width: 63%!important;
+}
+.full-verify-form-input .error
+{
+	padding-left: 0;
+}
+
+    .container
+    {
+        width: 100%;
+    }
+    .header-logo
+    {
+       width: 100%;
+    text-align: center;
+    }
+     .nav-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+.menu-icon
+{
+    width: 20%;
+    float: left;
+    padding: 15px 30px;
+    display: block;
+}
+.menu-icon button
+{
+    position: relative;
+    display: none;
+}
+.menu-icon i:before
+{
+   
+    content: "\f0c9";
+    font: normal normal normal 18px/1 FontAwesome;
+    position: absolute;
+    top: 38%;
+    bottom: 0;
+    left: 35px;
+    cursor: pointer;
+}
+.nav-bar ul li
+{
+    width: 100%;
+    background-color: #f3f3f3;
+    
+    border-bottom: 1px solid #ccc;
+}
+.nav-bar li a {
+    font-size: 17px;
+    padding: 22px 12px;
+    display: block;
+}
+.nav-bar li:after
+{
+    display: none;
+}
+.header-button {
+      width: 80%;
+    padding-top: 14px;
+    padding-left: 20px;
+}
+
+.header-button a
+    {
+        font-size: 9px;
+    }
+.menu-icon button {
+    font-size: 20px;
+    position: relative;
+}
+.menu-icon i:before
+{
+    z-index: 999;
+    left: 10px;
+}
+#Footer a {
+    font-size: 16px;
+}
+#Footer .footer_copy .copyright
+{
+    font-size: 16px;
+}
+.top-search-list li:last-child {
+     float: none;
+}
+.top-search-list li {
+    float: left;
+    padding-bottom: 10px;
+}
+div#example_paginate {
+    text-align: right;
+}
+.first-name-form {
+    width: 100%;
+    float: left;
+}
+.last-name-form {
+    width: 100%;
+    overflow: hidden;
+    }
+    .email-form {
+    width: 100%;
+    float: left;
+}
+.Phone-form {
+    width: 100%;
+    overflow: hidden;
+}
+.street-form {
+    width: 100%;
+    float: left;
+}
+.street-empty-form {
+    width: 100%;
+    overflow: hidden;
+}
+.city-form {
+    width: 100%;
+    float: left;
+}
+.state-form {
+    width: 100%;
+    overflow: hidden;
+}
+.zip-form {
+    width: 100%;
+    float: left;
+}
+.county-form {
+    width: 100%;
+    overflow: hidden;
+}
+.search-address-form {
+    width: 100%;
+}
+.search-address-form input.search-input
+{
+    width: 100%;
+}
+.my-profile-form input[type="text"]
+{
+    width: 100%;
+}
+.my-profile-form select
+{
+    width: 100%;
+}
+.inner-wrapper-assessment-form
+{
+    width: 100%;
+    padding-right: 30px;
+}
+.search-heading h4
+{
+    font-size: 12px;
+}
+.inner-assessment-form label
+{
+    font-size: 11px;
+}
+.inner-assessment-form input[type="text"]
+{
+    font-size: 10px;
+}
+.inner-top-search-list ul
+{
+    padding:0;
+}
+.inner-top-search-list li
+{
+    width: 23%;
+}
+.inner-top-search-list li a:after
+{
+    width: 54px;
+}
+.inner-wrapper-assessment
+{
+    width: 100%;
+    padding-top: 20px;
+}
+.inner-wrapper-top-search-list ul
+{
+    padding:0;
+}
+.inner-need-help ul
+{
+    margin: 0;
+}
+.inner-need-help h4
+{
+    margin: 0;
+    font-size: 20px;
+}
+.inner-need-help
+{
+    width: 70%;
+    padding-left: 0;
+}
+.inner-need-help p
+{
+    font-size: 9px;
+}
+.inner-need-help li
+{
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+.continue-button a
+{
+    font-size: 12px;
+    padding: 8px 8px;
+}
+.inner-wrapper-top-search-list li
+{
+    font-size:10px;
+}
+.inner-assessment-form label
+{
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.inner-assessment-form input[type="text"]
+{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+}
+.inner-assessment-form select
+{
+    width: 100%;
+}
+.inner-assessment-form .dropdown i:before
+{
+    top: 38px;
+}
+.outer-form
+{
+    width: 100%;
+}
+.inner-verify-form
+{
+    width: 100%;
+}
+.inner-verify-form
+{
+    padding:0;
+    padding-bottom: 15px;
+}
+.verify-form.inner-inner
+{
+    margin:0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+.full-verify-form
+{
+    padding:0;
+    padding-bottom: 15px;
+}
+.full-verify-form label
+{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.full-verify-form input[type="text"]
+{
+    width: 100%;
+
+}
+.major-items-form
+{
+    width: 100%;
+    padding:0;
+    padding-bottom: 10px;
+}
+.major-items-form label
+{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.major-items-form input[type="text"]
+{
+    width: 100%;
+    border-radius: 0;
+}
+.major-items-form select
+{
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    clear: both;
+}
+.heading-major h4
+{
+    font-size: 13px;
+}
+.confirm-button
+{
+    padding-top: 30px;
+    text-align: center;
+}
+.major-table
+{
+    width: 100%;
+}
+.major-table li
+{
+    width: 100%;
+}
+.inner-item-form p
+{
+    font-size: 13px;
+}
+.inner-item-form label
+{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.inner-item-form input[type="text"]
+{
+    width: 100%;
+}
+.inner-item-form b {
+    padding-left: 0;
+}
+
+.inner-item-form span
+{
+    width: 100%;
+    float: left;
+}
+.verify-image
+{
+    width: 100%;
+}
+.verify-image img
+{
+    max-width: 100%;
+    display: none;
+}
+select#county
+{
+    width: 100%;
+}
+input.form-control.inline-input {
+    width: 10%;
+}
+input.additional_homeowner_question.form-control.inline-input
+
+{
+    width: 93%;
+}
+ul.fireplace li {
+    width: 50%;
+    vertical-align: middle;
+}
+ul.garbage li
+{
+    width: 50%;
+    vertical-align: middle;
+}
+
+
+
+
+}
